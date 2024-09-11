@@ -1,0 +1,75 @@
+/* CulturalDetails.css */
+.cultural-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cultural-details h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .cultural-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .cultural-details strong {
+    color: #000;
+  }
+  
+  .cultural-details .carousel .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel .control-dots .dot {
+    background: #888;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background: #2d8cf0;
+  }
+  
+  .carousel .carousel-status {
+    display: none; /* Hides the current slide number status */
+  }
+  
+  /* Carousel arrow styling */
+  .carousel .control-next.control-arrow,
+  .carousel .control-prev.control-arrow {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel .control-next.control-arrow:hover,
+  .carousel .control-prev.control-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .cultural-details h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cultural-details p {
+      font-size: 1rem;
+    }
+  
+    .carousel .control-arrow {
+      display: none; /* Hides the arrows on small screens */
+    }
+  }
+  

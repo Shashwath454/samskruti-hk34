@@ -1,0 +1,366 @@
+/* src/HeritageList.css */
+
+/* Search Bar */
+
+
+  /* src/components/HeritageList.css */
+  #heritage-list{
+     /* Set your background image path */background-color: #e7d5bd;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 110px 20px;
+  }
+/* Styling for the section containing the search bar */
+.heritage-list-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.go-back-btn {
+    
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 80%;
+  
+}
+
+.go-back-btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .go-back-btn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+
+.publish-event-btn {
+    
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 80%;
+  
+}
+
+.publish-event-btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .publish-event-btn {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* Styling for the search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between search bar and content */
+}
+
+/* Styling for the search input field */
+.search-container input {
+  width: 100%;
+  max-width: 600px; /* Maximum width of the search bar */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Placeholder styling */
+.search-container input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Input focus styling */
+.search-container input:focus {
+  border-color: #d1b385;
+  box-shadow: #d5b990;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .search-container input {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container input {
+    width: 100%;
+    max-width: none; /* Remove max-width constraint on very small screens */
+  }
+}
+
+  /* Loading Spinner */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust based on content size */
+  }
+  
+  /* Card Layout */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .heritage-card {
+    background-color: #f8e6c8; /* Light bisque tone */
+    border: 1px solid #c7a87d; /* Slightly darker border for a defined edge */
+    border-radius: 2px;
+    width: 650px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .heritage-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-content h3 {
+    font-family:monospace;
+    font-size: 1.6em;
+    color: #3e2f1e; /* Dark brown for titles */
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #4f3f30; /* A darker shade for text */
+    line-height: 1.5;
+  }
+  
+  .card-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    color: #6e5a42; /* Muted brown color for icons and date */
+  }
+  
+  .card-icons span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-icons i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .know-more-btn {
+    background-color: #c7aa82; /* Muted beige button color */
+    color: #3e2f1e; /* Dark text for contrast */
+    padding: 10px 20px;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: monospace;
+    transition: background-color 0.3s ease;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #9b7e5a; /* Darker tone on hover */
+  }
+  
+  
+  
+ 
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #d5b990;
+    color: white;
+  }
+  
+  .pagination button:hover {
+    background-color: #d5b990;
+    color: white;
+  }
+  .pagination button.go-back-btn:active{
+    color:#d5b990 ;
+  }
+  
+  /* Modal */
+  .heritage-modal {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 50px;
+  }
+  
+  .heritage-modal h2 {
+    margin-bottom: 15px;
+  }
+  
+  .heritage-modal button {
+    background-color: #d5b990;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .heritage-modal button:hover {
+    background-color: #d5b990;
+  }
+
+  /* Modal overlay */
+/* Modal Content Container */
+.ReactModal__Content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  animation: fadeIn 0.3s ease-in-out; /* Modal fade-in animation */
+}
+
+/* Modal title (Heritage Name) */
+.ReactModal__Content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #005f73;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Modal paragraph (Location and Description) */
+.ReactModal__Content p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Bold text for location label */
+.ReactModal__Content p strong {
+  color: #005f73;
+}
+
+/* Close Button */
+.ReactModal__Content button {
+  background-color: #005f73;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0; /* Center the button */
+}
+
+.ReactModal__Content button:hover {
+  background-color: #028090; /* Darken button on hover */
+}
+
+/* Animation for modal opening */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .ReactModal__Content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .ReactModal__Content h2 {
+    font-size: 22px;
+  }
+
+  .ReactModal__Content p {
+    font-size: 14px;
+  }
+
+  .ReactModal__Content button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,53 @@
+/* src/components/Home.css */
+
+/* Apply a global background color (this might override other styles) */
+
+  /* Hero section styling */
+  .hero {
+    background-color: #e7d5bd; /* Set your background image path */
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 204px 20px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .hero-btn {
+    font-family:monospace;
+    background-color: #d5b990; /* Dark brown */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  /* Override default styles for h1 and p elements inside hero */
+  .hero h1, .hero p {
+    color: black; /* Ensure text is readable on dark background */
+  }
+  
+  /* Ensure other h1 and p elements on the page use default styles */
+  h1, p {
+    color: black; /* Use black color for text outside hero section */
+    font-family: monospace; /* Use a consistent font family */
+  }
+  
